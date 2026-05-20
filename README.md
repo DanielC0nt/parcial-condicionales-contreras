@@ -78,12 +78,13 @@ public class TarificadorTaxiYopal {
             solid=true;
         }
 
-        System.out.println("\n--- RECIBO ---");
+        System.out.println("\n====== RECIBO ======\n");
         System.out.println("Subtotal: $"+Math.round(sub));
         System.out.println("Recargos: "+rec+"% → $"+Math.round(vrec));
         System.out.println("Con recargos: $"+Math.round(conRec));
         System.out.println("Descuento: "+desc+"% → $"+Math.round(vdesc));
         System.out.println("TOTAL: $"+Math.round(total));
+         System.out.println("\n=====================\n");
         if (min1) System.out.println("Se aplicó tarifa mínima");
         if (solid) System.out.println("Se aplicó tarifa solidaria mínima");
 
